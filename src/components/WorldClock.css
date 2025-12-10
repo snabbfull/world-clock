@@ -1,0 +1,107 @@
+/* Контейнер одного элемента часов */
+.world-clock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  width: 200px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Название города */
+.clock-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Обёртка для круга */
+.clock-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+/* Сам круг */
+.clock {
+  width: 160px;
+  height: 160px;
+  border: 8px solid #f0f0f0;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle, #ffffff 60%, #f2f2f2 100%);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15),
+    inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Общие свойства стрелок */
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #333;
+  transform-origin: 0% 50%;
+  border-radius: 2px;
+}
+
+/* Часовая */
+.hour-hand {
+  width: 40%;
+  height: 4px;
+  background: #222;
+}
+
+/* Минутная */
+.minute-hand {
+  width: 50%;
+  height: 3px;
+  background: #444;
+}
+
+/* Секундная */
+.second-hand {
+  width: 55%;
+  height: 2px;
+  background: #e63946;
+}
+
+/* Центральная точка */
+.center-dot {
+  width: 12px;
+  height: 12px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 6px);
+  left: calc(50% - 6px);
+  z-index: 20;
+}
+
+/* Кнопка удаления */
+.clock-delete-btn {
+  background: #ff5e5e;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.clock-delete-btn:hover {
+  background: #ff2f2f;
+  transform: translateY(-2px);
+}
+
+.clock-delete-btn:active {
+  transform: translateY(0);
+}

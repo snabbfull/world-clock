@@ -1,0 +1,7 @@
+.clock-list {
+  display: flex;
+  flex-wrap: wrap;       /* перенос на новую строку, если не влезают */
+  gap: 20px;             /* расстояние между часами */
+  justify-content: center; /* выравнивание по центру (можешь изменить) */
+  padding: 20px 0;
+}

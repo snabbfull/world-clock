@@ -1,0 +1,70 @@
+.clock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 260px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.1),
+    inset 0 0 6px rgba(0, 0, 0, 0.03);
+  font-family: Arial, sans-serif;
+}
+
+.clock-name-container,
+.time-zone-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.clock-name,
+.time-zone {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.clock-name-text,
+.time-zone-number {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background: #fafafa;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.clock-name-text:focus,
+.time-zone-number:focus {
+  border-color: #6a95ff;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(100, 150, 255, 0.25);
+  outline: none;
+}
+
+.clock-add-btn {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6a95ff, #4b77ff);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(80, 120, 255, 0.35);
+  transition: all 0.2s ease;
+}
+
+.clock-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(80, 120, 255, 0.45);
+}
+
+.clock-add-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(80, 120, 255, 0.3);
+}
